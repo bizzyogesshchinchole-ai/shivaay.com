@@ -1,0 +1,6 @@
+{
+  "name": "Shivaay Agri Products",
+  "description": "Premium fresh flour, millets, and multigrain flours freshly prepared on order and delivered to your doorstep.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

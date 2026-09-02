@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "entities": {
+    "products": {
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "categoryId": { "type": "string" },
+        "basePrice": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "rating": { "type": "number" },
+        "reviewCount": { "type": "number" },
+        "isOrganic": { "type": "boolean" },
+        "isStoneGround": { "type": "boolean" },
+        "isBestSeller": { "type": "boolean" },
+        "isFeatured": { "type": "boolean" },
+        "isAvailable": { "type": "boolean" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "packSizes": { "type": "array" },
+        "nutritionFacts": { "type": "object" },
+        "millingDetails": { "type": "object" },
+        "recipes": { "type": "array" },
+        "faqs": { "type": "array" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "orders": {
+      "fields": {
+        "id": { "type": "string" },
+        "orderNumber": { "type": "string" },
+        "customer": { "type": "object" },
+        "items": { "type": "array" },
+        "subtotal": { "type": "number" },
+        "deliveryCharge": { "type": "number" },
+        "discountAmount": { "type": "number" },
+        "totalAmount": { "type": "number" },
+        "appliedCoupon": { "type": "object" },
+        "paymentMethod": { "type": "string" },
+        "paymentStatus": { "type": "string" },
+        "status": { "type": "string" },
+        "millingBatch": { "type": "string" },
+        "estimatedDeliveryDate": { "type": "string" },
+        "trackingNumber": { "type": "string" },
+        "deliveryAddress": { "type": "object" },
+        "timeline": { "type": "array" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "customers": {
+      "fields": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "loyaltyTier": { "type": "string" },
+        "totalGrainMilledKg": { "type": "number" },
+        "dietaryPreferences": { "type": "array", "items": { "type": "string" } },
+        "addresses": { "type": "array" },
+        "createdAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" }
+      }
+    },
+    "reviews": {
+      "fields": {
+        "id": { "type": "string" },
+        "productId": { "type": "string" },
+        "productName": { "type": "string" },
+        "customerName": { "type": "string" },
+        "rating": { "type": "number" },
+        "comment": { "type": "string" },
+        "verifiedBuyer": { "type": "boolean" },
+        "isApproved": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "coupons": {
+      "fields": {
+        "code": { "type": "string" },
+        "discountType": { "type": "string" },
+        "discountValue": { "type": "number" },
+        "minOrderAmount": { "type": "number" },
+        "maxDiscount": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "description": { "type": "string" },
+        "validTill": { "type": "string" }
+      }
+    },
+    "settings": {
+      "fields": {
+        "id": { "type": "string" },
+        "storeName": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "supportPhone": { "type": "string" },
+        "supportEmail": { "type": "string" },
+        "freeDeliveryThreshold": { "type": "number" },
+        "standardDeliveryCharge": { "type": "number" },
+        "millingLocation": { "type": "string" },
+        "currency": { "type": "string" },
+        "millingCapacityPerDayKg": { "type": "number" }
+      }
+    }
+  }
+}
